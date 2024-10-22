@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Courier Management - Login</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">CargoQuest</h1>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Track Shipment</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <form class="login-form" onsubmit="handleLogin(event)">
+            <h1>Login</h1>
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <button type="submit"  class="btn">Login</button>
+            <p>Don't have an account? <a href="register.html" class="register-link">Register here</a></p>
+        </form>
+    </div>
+
+    <!-- JavaScript to handle form submission and redirect -->
+    <script>
+        function handleLogin(event) {
+            event.preventDefault(); // Prevent form from submitting traditionally
+            // Redirect to dashboard.html
+            window.location.href = 'dashboard.html';
+        }
+    </script>
+</body>
+</html>
